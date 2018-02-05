@@ -1,0 +1,457 @@
+/******************/
+/* STYLE SPECIFIC */
+/******************/
+
+.white-text {
+    color: white;
+}
+
+.larger-text {
+    font-size: 20px;
+}
+
+p.huge-text.white-text {
+    font-size: 7rem;
+}
+
+p.fancy-text.white-text {
+    font-family: 'Vidaloka', serif;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+div .dark-bg {
+    background-color: hsla(70, 18%, 7%, 0.80);
+}
+
+div .black-bg {
+    background-color: #13140e;
+}
+
+div .transparent-bg {
+    background-color: transparent; 
+}
+
+.dark-text-hover:hover {
+    color: #323232;
+}
+
+.gold-bg-hover:hover {
+    background-color: gold; 
+}
+
+.space-top {
+    margin-top: 4rem;
+}
+
+div .space-right {
+    margin-right: 10rem;
+}
+
+div .space-left {
+    margin-left: 10rem;
+}
+
+div .space-left-desktop {
+    margin-left: 10rem;
+}
+
+.valign-top {
+    vertical-align: top;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-right-desktop {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);    
+}
+
+p.quote.white-text {
+    font-family: 'Mark Script', cursive;
+    font-size: 3rem;
+    margin-top: 2rem;
+    line-height: 3rem; 
+}
+
+.center-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.warning {
+    text-transform: uppercase;
+}
+
+.forfait-sm {
+    position: relative;
+    border: 2px solid white;
+    width: 70%;
+    margin: auto;
+    background-color: #13140e;
+}
+
+.forfait-lg {
+    position: relative;
+    border: 2px solid gold;
+    width: 90%;
+    margin: auto;
+    background-color: #13140e;
+}
+
+.corner-text {
+    font-family: 'Vidaloka', serif;
+    font-size: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    background-color: #13140e;
+    top: -2px;
+    left: -2px;
+}
+
+.flex-center-bot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.spacing-top-bot {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+div .spacing-top-bot-s {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.reverse-skewed {
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg); /* IE 9 */
+    -webkit-transform: skewY(3deg); /* Safari */
+    box-shadow: none;
+}
+
+.skewed {
+    transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg); /* IE 9 */
+    -webkit-transform: skewY(-3deg); /* Safari */
+}
+
+.filler {
+    position: absolute;
+    background: #13140e;
+    width: 100%;
+    height: 5rem;
+}
+
+.filler-collapsed {
+    position: absolute;
+    background: #13140e;
+    width: 100%;
+    height: 5rem;
+}
+
+.filler-collapse-inner {
+    position: absolute;
+    background: #13140e;
+    width: 100%;
+    height: 5rem;
+}
+
+#current-page {
+    color: gold;
+}
+
+/**************/
+/* CUSTOM TAGS */
+/**************/
+
+i {
+    color: white;
+}
+
+div h1 {
+    font-family: 'Vidaloka', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+p.white-text {
+    font-family: 'Cantata One', serif;
+    font-size: 1.3rem;
+}
+
+h2.spec-font {
+    font-family: 'Vidaloka', serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/**************/
+/* CUSTOM MDL */
+/**************/
+
+.mdl-layout__header {
+    background-color: transparent;
+}
+
+div .mdl-layout__drawer {
+    border-color: gold;
+}
+
+div .mdl-layout__drawer-button {
+    position: static;
+}
+
+.mdl-navigation__link {
+    text-transform: uppercase;
+    font-family: 'Vidaloka', serif;
+}
+
+.mdl-button {
+    background-color: gold !important;
+}
+
+/**************/
+/* MAIN AREAS */
+/**************/
+
+#global {
+    position: relative;
+}
+
+#main-content {
+
+}
+
+#c-header {
+    background-color: #13140e; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+#body-warning {
+    background-image: none;
+    background-color: #13140e;
+}
+
+/**************/
+/* IMAGE DIVS */
+/**************/
+
+#accueil {
+    background-image: url(accueil-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#portrait {
+    background-image: url(portrait-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#questionnaire {
+    background-image: url(questionnaire-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%
+}
+
+#logo-pyd {
+    width: auto;
+    max-height: 100px;
+    height: 100px;
+}
+
+#logo-pyd-md {
+   display: none;
+}
+
+#logo-pyd-sm {
+    display: none;
+}
+
+#pyd-vid {
+    width: 55%;
+    height: auto;
+}
+
+#logo-pyd-warning {
+    width: auto;
+    max-height: 150px;
+    height: 150px;
+}
+
+#self-portrait {
+    background: url(self-portrait.jpg) no-repeat center center;
+    background-size: 30rem auto;
+    max-width: 100%;
+    width: 100%;
+    height: 30rem;
+}
+
+#who {
+    background-image: url(who.jpg);
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+}
+
+#concept {
+    background-image: url(concept.jpg);
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media (min-width: 200px) and (max-width: 839px) {
+    #main-content {
+        margin-top: 1rem;
+    }
+
+    #logo-pyd-warning {
+        width: auto;
+        max-height: 90px;
+        height: 90px;
+    }
+
+    #accueil {
+        background-position: 80% center;
+        background-size: auto 100%;
+    }
+
+    #portrait {
+        background-position: 93% center;
+        background-size: auto 100%;
+    }
+
+    #questionnaire {
+        background-position: 81% center;
+        background-size: auto 100%;
+    }
+
+    #logo-pyd-sm {
+        padding-top: 1rem;
+        padding-left: 5rem;
+        display: block;
+        width: auto;
+        max-height: 50px;
+        height: 50px;
+    }
+
+    div .space-left-desktop {
+        margin-left: 5rem;
+    }
+
+    .forfait-sm {
+        position: relative;
+        border: 2px solid white;
+        width: 100%;
+        margin: auto;
+        background-color: #13140e;
+    }
+
+    .forfait-lg {
+        position: relative;
+        border: 2px solid gold;
+        width: 100%;
+        margin: auto;
+        background-color: #13140e;
+    }
+
+    .align-right-desktop {
+        text-align: initial;
+    }
+}
+
+@media (min-width: 838px) and (max-width: 1024px) {
+    #main-content {
+        margin-top: 3rem;
+    }
+    
+    #accueil {
+        background-position: 80% center;
+        background-size: auto 100%;
+    }
+
+    #portrait {
+        background-position: 80% center;
+        background-size: auto 100%;
+    }
+
+    #questionnaire {
+        background-position: 80% center;
+        background-size: auto 100%;
+    }
+
+    .forfait-sm {
+        position: relative;
+        border: 2px solid white;
+        width: 100%;
+        margin: auto;
+        background-color: #13140e;
+    }
+
+    .forfait-lg {
+        position: relative;
+        border: 2px solid gold;
+        width: 100%;
+        margin: auto;
+        background-color: #13140e;
+    }
+
+    .align-right-desktop {
+        text-align: initial;
+    }
+
+    .filler {
+        background-color: transparent;   
+    }
+    .filler-collapse-inner {
+        display: none;
+    }
+
+    #logo-pyd-md {
+        margin-top: 1rem;
+        margin-left: 5rem;
+        display: block;
+        width: auto;
+        max-height: 70px;
+        height: 70px;
+    }
+}

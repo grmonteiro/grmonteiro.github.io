@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- no-cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>L'Ultime Portrait</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Vidaloka" rel="stylesheet">
+</head>
+
+<body id="portrait" onload="checkValidation('portrait')">
+
+    <div id="global" class="mdl-layout mdl-js-layout">
+        <div class="filler mdl-cell--hide-phone mdl-cell--hide-tablet">
+            <img id="logo-pyd-md" src="logo-pyd.png" alt="Logo Pimp Your Death">
+        </div>
+        <div class="filler-collapse-inner mdl-cell-hide-desktop">
+            <img id="logo-pyd-sm" src="logo-pyd.png" alt="Logo Pimp Your Death">
+        </div>
+        <header id="c-header" class="dark-bg skewed mdl-layout__header mdl-layout__header--scroll">
+            <div class="transparent-bg reverse-skewed mdl-layout__header-row white-text">
+                <!-- Title -->
+                <div class="mdl-layout-icon">
+                    <img id="logo-pyd" src="logo-pyd.png" alt="Logo Pimp Your Death">
+                </div>
+                <div class="mdl-layout-spacer"></div>
+                <!-- Add spacer, to align navigation to the right -->
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="accueil.html">Accueil</a>
+                    <a id="current-page" class="mdl-navigation__link" href="portrait.html">L'Ultime Portrait</a>
+                    <a class="mdl-navigation__link" href="#">Exibition</a>
+                    <a class="mdl-navigation__link" href="#">Galerie d'Or</a>
+                    <a class="mdl-navigation__link" href="#">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="black-bg mdl-layout__drawer mdl-layout--small-screen-only">
+            <div class="mdl-layout-icon"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="accueil.html">Accueil</a>
+                <a class="mdl-navigation__link" href="portrait.html">L'Ultime Portrait</a>
+                <a class="mdl-navigation__link" href="#">Exibition</a>
+                <a class="mdl-navigation__link" href="#">Galerie d'Or</a>
+                <a class="mdl-navigation__link" href="#">Contact</a>
+            </nav>
+        </div>
+
+        <main id="main-content" class="mdl-layout__content">
+
+            <!-- L'ULTIME PORTRAIT -->
+            <div class="skewed dark-bg space-top shadow">
+                <div class="reverse-skewed spacing-top-bot">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--6-col valign-top">
+                            <h1 class="white-text">L'ultime portrait</h1>
+                            <p class="white-text">
+                                Exhibitionniste, désillusionné, ambitieux, cruel, agressif, fourbe ou dominant…
+                            </p>
+                            <p class="white-text">
+                                Mettez vous à nu, révélez au monde vos secrets inavouables afin de rester gravé dans les mémoires.
+                            </p>
+                            <p class="larger-text white-text">
+                                De toute façon, vous n’avez plus rien à perdre, n’est-ce pas ?
+                            </p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO -->
+            <div class="skewed dark-bg space-top shadow">
+                <div class="reverse-skewed transparent-bg spacing-top-bot">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col align-center">
+                            <video id="pyd-vid" controls>
+                                <source src="oui.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <p class="white-text quote align-center">
+                                Montrez au monde tout ce que vous n’avez jamais osé avec une Ultime expérience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forfait -->
+            <div class="skewed dark-bg space-top shadow">
+                <div class="reverse-skewed spacing-top-bot">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <div class="mdl-grid">
+                                        <div class="mdl-cell mdl-cell--3-col align-right-desktop">
+                                            <p class="white-text huge-text fancy-text">1</p>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--9-col">
+                                            <p class="white-text larger-text fancy-text text-upper">Portrait
+                                                <br/>Questionnaire</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <div class="mdl-grid">
+                                        <div class="mdl-cell mdl-cell--6-col align-right-desktop">
+                                            <p class="white-text huge-text fancy-text">10</p>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--6-col">
+                                            <p class="white-text larger-text fancy-text text-upper">Questions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <div class="mdl-grid">
+                                        <div class="mdl-cell mdl-cell--3-col align-right-desktop">
+                                            <p class="white-text huge-text fancy-text">1</p>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--9-col">
+                                            <p class="white-text larger-text fancy-text text-upper">Ultime
+                                                <br/>Rendez-vous</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <p class="white-text align-center larger-text">
+                                avec une équipe de professionnels afin de développer votre questionnaire et de trouver le portrait parfait.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LES FORFAITS -->
+            <div class="skewed dark-bg space-top shadow">
+                <div class="reverse-skewed transparent-bg spacing-top-bot">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--12-phone">
+                            <div class="forfait-sm" onclick="location.href = 'questionnaire.html'">
+                                <p class="corner-text white-text">
+                                    1H00
+                                </p>
+                                <h2 class="white-text align-center spec-font">
+                                    Mort Douce
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--12-phone">
+                            <div class="forfait-sm" onclick="location.href = 'questionnaire.html'">
+                                <p class="corner-text white-text">
+                                    2H00
+                                </p>
+                                <h2 class="white-text align-center spec-font">
+                                    Mort philosophique
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--12-phone">
+                            <div class="forfait-sm" onclick="location.href = 'questionnaire.html'">
+                                <p class="corner-text white-text">
+                                    2H00
+                                </p>
+                                <h2 class="white-text align-center spec-font">
+                                    Mort pomponnée
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="forfait-lg" onclick="location.href = 'questionnaire.html'">
+                                <p class="corner-text white-text">
+                                    3H30
+                                </p>
+                                <h2 class="white-text align-center spec-font">
+                                    Mort Deluxe
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

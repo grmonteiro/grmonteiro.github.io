@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- no-cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Pimp Your Death</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Vidaloka" rel="stylesheet">
+</head>
+
+<body id="accueil" onload="checkValidation('accueil')">
+
+    <div id="global" class="mdl-layout mdl-js-layout">
+        <div class="filler mdl-cell--hide-phone mdl-cell--hide-tablet">
+            <img id="logo-pyd-md" src="logo-pyd.png" alt="Logo Pimp Your Death">
+        </div>
+        <div class="filler-collapse-inner mdl-cell-hide-desktop">
+            <img id="logo-pyd-sm" src="logo-pyd.png" alt="Logo Pimp Your Death">
+        </div>
+        <header id="c-header" class="dark-bg skewed mdl-layout__header mdl-layout__header--scroll">
+            <div class="transparent-bg reverse-skewed mdl-layout__header-row white-text">
+                <!-- Title -->
+                <div class="mdl-layout-icon">
+                    <img id="logo-pyd" src="logo-pyd.png" alt="Logo Pimp Your Death">
+                </div>
+                <div class="mdl-layout-spacer"></div>
+                <!-- Add spacer, to align navigation to the right -->
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a id="current-page" class="mdl-navigation__link" href="accueil.html">Accueil</a>
+                    <a class="mdl-navigation__link" href="portrait.html">L'Ultime Portrait</a>
+                    <a class="mdl-navigation__link" href="#">Exibition</a>
+                    <a class="mdl-navigation__link" href="#">Galerie d'Or</a>
+                    <a class="mdl-navigation__link" href="#">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="black-bg mdl-layout__drawer mdl-layout--small-screen-only">
+            <div class="mdl-layout-icon"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="accueil.html">Accueil</a>
+                <a class="mdl-navigation__link" href="accueil.html">L'Ultime Portrait</a>
+                <a class="mdl-navigation__link" href="#">Exibition</a>
+                <a class="mdl-navigation__link" href="#">Galerie d'Or</a>
+                <a class="mdl-navigation__link" href="#">Contact</a>
+            </nav>
+        </div>
+
+        <main id="main-content" class="mdl-layout__content">
+
+            <!-- MAPPLETHORPE -->
+            <div class="skewed dark-bg space-top shadow">
+                <div class="reverse-skewed spacing-top-bot">
+                    <div class="mdl-grid">
+                        <div class="flex-center-bot mdl-cell mdl-cell--6-col">
+                            <p class="quote white-text">"Avec les portraits, c’est toujours l’esprit qui est capture dans l’image et non l’expertise
+                                technique."
+                            </p>
+                            <p class="white-text align-right quote">- John Claridge</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <!-- <div class="skewed" id="self-portrait"></div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- QUI SOMMES NOUS ? -->
+            <div class="skewed dark-bg space-top shadow">
+                <div class="reverse-skewed spacing-top-bot">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--6-col valign-top">
+                            <h1 class="white-text">QUI SOMMES NOUS ?</h1>
+                            <p class="white-text">
+                                Nous sommes un groupe de visionnaires reclus de la société partageant la même folie ainsi que la même idéologie et l’amour
+                                du beau. Avec l’envie de travailler ensemble après nos études nous avons créé une agence
+                                de communication visuelle et un studio de photographie conceptuelle sur la côte basque en
+                                France.
+                            </p>
+                            <p class="white-text">
+                                Nous sommes fiers d’être les créateurs d’un thème barré, inattendu et original qui nous a valu de très beaux témoignages
+                                de personnes formidables possédant une belle ouverture d’esprit.
+                            </p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <!-- <div class="skewed" id="who"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOTRE CONCEPT -->
+            <div class="skewed dark-bg space-top shadow">
+                <div class="reverse-skewed transparent-bg spacing-top-bot">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <h1 class="white-text align-right">NOTRE CONCEPT</h1>
+                            <p class="white-text align-right">
+                                Une personne en fin de vie a souvent envie de laisser quelque chose derrière elle : un message, un souvenir, une trace de
+                                son évolution, une image, un choc.
+                            </p>
+                            <p class="white-text align-right">
+                                Notre idée est de vous accompagner et de créer votre portrait, votre rétrospective, d’imager votre message en mettant à nue
+                                votre personnalité et vos émotions.
+                            </p>
+                            <p class="white-text quote">
+                                "Le temps court et s’ecoule et notre mort seule arrive a le rattraper. La photographie est un couperet qui dans l’eterniteé
+                                saisit l’instant qui l’a oubliée."
+                            </p>
+                            <p class="white-text quote align-right">- Henri Cartier-Bresson</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <!-- <div id="concept"></div> -->
+                        </div>
+                        <!-- <div class="space-right space-left mdl-cell mdl-cell--12-col">
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+
+</body>
+
+</html>
