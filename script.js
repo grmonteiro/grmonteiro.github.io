@@ -18,3 +18,4 @@ function ageVerification(validation) {
         location.href = "https://google.fr";
     }
 }
+

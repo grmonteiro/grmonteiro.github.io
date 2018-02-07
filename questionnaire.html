@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="fr">
-<!--<![endif]-->
 
 <head>
-    <!-- no-cache -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-
     <title>L'Ultime Questionnaire</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
 
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Vidaloka" rel="stylesheet">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    
+    <!-- MDL -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">    
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-    <!-- Custom script -->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom Script -->
     <script src="script.js"></script>
 
     <!-- turn.js -->
@@ -30,7 +26,6 @@
     <script type="text/javascript" src="turnjs4/extras/modernizr.2.5.3.min.js"></script>
     <script type="text/javascript" src="turnjs4/lib/hash.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Vidaloka" rel="stylesheet">
 </head>
 
 <body id="questionnaire" onload="checkValidation('questionnaire')">
@@ -115,7 +110,6 @@
             <div class="skewed dark-bg space-top shadow">
                 <div class="reverse-skewed transparent-bg spacing-top-bot">
                     <div id="canvas">
-                        <div class="zoom-icon zoom-icon-in"></div>
 
                         <div class="magazine-viewport">
                             <div class="container">
