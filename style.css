@@ -120,7 +120,7 @@ p.quote.white-text {
     background-color: #13140e;
 }
 
-.corner-text {
+p.corner-text.white-text {
     font-family: 'Vidaloka', serif;
     font-size: 2rem;
     padding-right: 2rem;
