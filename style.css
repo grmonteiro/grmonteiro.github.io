@@ -83,10 +83,11 @@ div .space-left-desktop {
 }
 
 p.quote.white-text {
-    font-family: 'Mark Script', cursive;
-    font-size: 3rem;
-    margin-top: 2rem;
-    line-height: 3rem; 
+    font-family: 'Playfair Display', serif;
+    font-style: italic; 
+    font-size: 2rem;
+    margin-top: 1rem;
+    /* line-height: 3rem;  */
 }
 
 .center-content {
