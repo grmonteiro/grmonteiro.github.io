@@ -110,6 +110,7 @@ p.quote.white-text {
     width: 70%;
     margin: auto;
     background-color: #13140e;
+    cursor: pointer;
 }
 
 .forfait-lg {
@@ -118,6 +119,7 @@ p.quote.white-text {
     width: 90%;
     margin: auto;
     background-color: #13140e;
+    cursor: pointer;
 }
 
 p.corner-text.white-text {
