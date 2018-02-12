@@ -82,6 +82,14 @@ div .space-left-desktop {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);    
 }
 
+.hide {
+    visibility: hidden;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
 p.quote.white-text {
     font-family: 'Playfair Display', serif;
     font-style: italic; 
@@ -108,18 +116,29 @@ p.quote.white-text {
     position: relative;
     border: 2px solid white;
     width: 70%;
+    height: 7rem;
     margin: auto;
     background-color: #13140e;
     cursor: pointer;
+    transition: height ease 0.5s, box-shadow ease 0.5s;
 }
 
 .forfait-lg {
     position: relative;
     border: 2px solid gold;
     width: 90%;
+    height: 7rem;
     margin: auto;
     background-color: #13140e;
     cursor: pointer;
+    transition: height ease 0.5s, box-shadow ease 0.5s
+}
+.forfait-lg > p.align-center {
+    width: 100%;
+}
+
+.price-tag {
+    top: 12rem;
 }
 
 p.corner-text.white-text {
@@ -303,6 +322,7 @@ div .mdl-layout__drawer-button {
 #pyd-vid {
     width: 55%;
     height: auto;
+    border: 30px solid gold;
 }
 
 #logo-pyd-warning {
@@ -335,6 +355,38 @@ div .mdl-layout__drawer-button {
     background-repeat: no-repeat;
     width: 100%;
     height: 25rem;
+}
+
+/**************/
+/* Animations */
+/**************/
+
+.forfait-sm:hover {
+    -webkit-box-shadow: 0px 0px 26px 3px white;
+    -moz-box-shadow: 0px 0px 26px 3px white;
+    box-shadow: 0px 0px 26px 3px white;
+    height: 15rem;
+}
+
+.forfait-lg:hover {
+    -webkit-box-shadow: 0px 0px 26px 3px gold;
+    -moz-box-shadow: 0px 0px 26px 3px gold;
+    box-shadow: 0px 0px 26px 3px gold;
+    height: 15rem;
+}
+
+.show-on-hover {
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity ease 0.2s, visibility ease 0.2s;
+}
+
+.animate-to-visible {
+    visibility: visible;
+    opacity: 1;    
+    transition: visibility 0.3s ease 0.5s, opacity 0.3s ease 0.5s;    
 }
 
 /*****************/

@@ -1,3 +1,10 @@
+/*
+*   ** livre.js **
+*   Script qui controle le comportement du livre dans la page questionnaire.html
+* 
+*/
+
+
 function loadApp() {
 
     $('#canvas').fadeIn(1000);
@@ -347,34 +354,6 @@ function loadApp() {
     $('.magazine').addClass('animated');
 
 }
-
-// Zoom icon
-
-$('.zoom-icon').css('display','none');
-// $('.zoom-icon').bind('mouseover', function () {
-
-//     if ($(this).hasClass('zoom-icon-in'))
-//         $(this).addClass('zoom-icon-in-hover');
-
-//     if ($(this).hasClass('zoom-icon-out'))
-//         $(this).addClass('zoom-icon-out-hover');
-
-// }).bind('mouseout', function () {
-
-//     if ($(this).hasClass('zoom-icon-in'))
-//         $(this).removeClass('zoom-icon-in-hover');
-
-//     if ($(this).hasClass('zoom-icon-out'))
-//         $(this).removeClass('zoom-icon-out-hover');
-
-// }).bind('click', function () {
-
-//     if ($(this).hasClass('zoom-icon-in'))
-//         $('.magazine-viewport').zoom('zoomIn');
-//     else if ($(this).hasClass('zoom-icon-out'))
-//         $('.magazine-viewport').zoom('zoomOut');
-
-// });
 
 $('#canvas').hide();
 
