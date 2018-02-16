@@ -1,7 +1,7 @@
 /*
 *   ** livre.js **
 *   Script qui controle le comportement du livre dans la page questionnaire.html
-* 
+*   
 */
 
 
@@ -71,6 +71,9 @@ function loadApp() {
 
                 disableControls(page);
 
+                console.log(">> loadApp() > flipbook.turn() > when: turning > page = " + page);
+                console.log(">> loadApp() > flipbook.turn() > when: turning > currentPage = " + currentPage);
+
 
                 $('.thumbnails .page-' + currentPage).
                     parent().
@@ -80,15 +83,73 @@ function loadApp() {
                     parent().
                     addClass('current');
 
-
-
             },
 
             turned: function (event, page, view) {
 
                 disableControls(page);
 
+                console.log(">> loadApp() > flipbook.turn() > when: turned > page = " + page);
+
                 $(this).turn('center');
+
+
+                // ADDED CODE
+                var oddPage = parseInt(page) + 1;
+                oddPage = page == 1 ? 3 : parseInt(page) + 1;
+                console.log("oddPage = " + oddPage);
+                var question;
+
+                switch (oddPage) {
+                    case 3: question = 1;
+                        break;
+                    case 5: question = 2;
+                        break;
+                    case 7: question = 3;
+                        break;
+                    case 9: question = 4;
+                        break;
+                    case 11: question = 5;
+                        break;
+                    case 13: question = 6;
+                        break;
+                    case 15: question = 7;
+                        break;
+                    case 17: question = 8;
+                        break;
+                    case 19: question = 9;
+                        break;
+                    case 21: question = 10;
+                        break;
+                    case 23: question = 10;
+                        break;
+                }
+
+                // Add textarea if it doesn't exist
+                if (!$(".p" + oddPage).children().hasClass("text-field") && question != undefined) {
+                    console.log('text-field doesnt exist yet');
+                    $(".p" + oddPage).prepend(
+                        "<label id='label-" + question + "' for='idQuestion" + question + "' hidden='hidden'>Question " + question + "</label>" +
+                        "<textarea class='text-field show-field pos-abs' id='idQuestion" + question + "' name='question" + question + "' placeholder='Votre Réponse'></textarea>"
+                    );
+                    $("#idQuestion" + question).focus();
+                } else {
+                    console.log('text-field already exists');
+                    $("#idQuestion" + question).focus();
+                }
+                if (oddPage == 23) {
+                    console.log('Book end');
+                    $(".book-btn-container").addClass("animate-to-visible")
+                }
+                if (question > 1) {
+                    var answer = $("#idQuestion" + (question - 1)).val();
+                    localStorage.setItem("question" + (question - 1), answer);
+                    localStorage.setItem("question" + question, $("#idQuestion" + question).val());                    
+                }
+
+
+                console.log('question = ' + question);
+
 
                 if (page == 1) {
                     $(this).turn('peel', 'br');
@@ -178,44 +239,6 @@ function loadApp() {
         }
     });
 
-    // Zoom event
-
-    // if ($.isTouch)
-    //     $('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
-    // else
-    //     $('.magazine-viewport').bind('zoom.tap', zoomTo);
-
-
-    // Using arrow keys to turn the page
-
-    $(document).keydown(function (e) {
-
-        var previous = 37, next = 39, esc = 27;
-
-        switch (e.keyCode) {
-            case previous:
-
-                // left arrow
-                $('.magazine').turn('previous');
-                e.preventDefault();
-
-                break;
-            case next:
-
-                //right arrow
-                $('.magazine').turn('next');
-                e.preventDefault();
-
-                break;
-            case esc:
-
-                $('.magazine-viewport').zoom('zoomOut');
-                e.preventDefault();
-
-                break;
-        }
-    });
-
     // URIs - Format #/page/1 
 
     Hash.on('^page\/([0-9]*)$', {
@@ -289,15 +312,6 @@ function loadApp() {
 
         });
 
-    }
-
-
-    // Regions
-
-    if ($.isTouch) {
-        $('.magazine').bind('touchstart', regionClick);
-    } else {
-        $('.magazine').click(regionClick);
     }
 
     // Events for the next button

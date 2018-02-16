@@ -47,9 +47,9 @@
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="accueil.html">Accueil</a>
                     <a id="current-page" class="mdl-navigation__link" href="portrait.html">L'Ultime Portrait</a>
-                    <a class="mdl-navigation__link" href="#">Exibition</a>
+                    <a class="mdl-navigation__link" href="#">Exhibition</a>
                     <a class="mdl-navigation__link" href="#">Galerie d'Or</a>
-                    <a class="mdl-navigation__link" href="#">Contact</a>
+                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
                 </nav>
             </div>
         </header>
@@ -58,9 +58,9 @@
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="accueil.html">Accueil</a>
                 <a class="mdl-navigation__link" href="portrait.html">L'Ultime Portrait</a>
-                <a class="mdl-navigation__link" href="#">Exibition</a>
+                <a class="mdl-navigation__link" href="#">Exhibition</a>
                 <a class="mdl-navigation__link" href="#">Galerie d'Or</a>
-                <a class="mdl-navigation__link" href="#">Contact</a>
+                <a class="mdl-navigation__link" href="contact.html">Contact</a>
             </nav>
         </div>
 
@@ -89,7 +89,8 @@
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--12-col align-center">
                             <video id="pyd-vid" controls>
-                                <source src="oui.mp4" type="video/mp4">
+                                <source src="pimpvideo.mp4" type="video/mp4">
+                                <source src="pimpvideo.webm" type="video/webm">
                             </video>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col">
@@ -155,70 +156,103 @@
                 <div class="reverse-skewed transparent-bg spacing-top-bot">
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--4-col mdl-cell--12-phone">
-                            <div class="forfait-sm" onclick="location.href = 'questionnaire.html'">
+                            <div class="forfait-sm" onclick="storeChosenOffer('sapin')">
                                 <p class="corner-text white-text">
                                     1H00
                                 </p>
                                 <h2 class="white-text align-center spec-font">
-                                    Mort Douce
+                                    Ça sent le sapin
                                 </h2>
                                 <p class="show-on-hover white-text align-center">
-                                    Une fuckin description assez sweg
+                                    Shooting photo
                                 </p>
                                 <p class="show-on-hover price-tag white-text align-center">
-                                    Le prix
+                                    299,00
                                 </p>
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--4-col mdl-cell--12-phone">
-                            <div class="forfait-sm" onclick="location.href = 'questionnaire.html'">
+                            <div id="forfait-mid" class="forfait-sm" onclick="storeChosenOffer('tripes')">
                                 <p class="corner-text white-text">
                                     2H00
                                 </p>
                                 <h2 class="white-text align-center spec-font">
-                                    Mort philosophique
+                                    S’aérer les tripes
                                 </h2>
                                 <p class="show-on-hover white-text align-center">
-                                    Une fuckin description assez sweg
+                                    Entretien avec la psychologue et philosophe Hayley KAROWSKI et shooting photo
                                 </p>
-                                <p class="show-on-hover price-tag white-text align-center">
-                                    Le prix
+                                <p id="price" class="show-on-hover price-tag white-text align-center">
+                                    399,00
                                 </p>
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--4-col mdl-cell--12-phone">
-                            <div class="forfait-sm" onclick="location.href = 'questionnaire.html'">
+                            <div class="forfait-sm" onclick="storeChosenOffer('cadavre')">
                                 <p class="corner-text white-text">
                                     2H00
                                 </p>
-                                <h2 class="white-text align-center spec-font">
-                                    Mort pomponnée
+                                <h2 class="white-text align-center spec-font line-control">
+                                    Embellir le Cadavre
                                 </h2>
                                 <p class="show-on-hover white-text align-center">
-                                    Une fuckin description assez sweg
+                                    Maquillage et coiffure par Ivan et Julia et Shooting photo
                                 </p>
                                 <p class="show-on-hover price-tag white-text align-center">
-                                    Le prix
+                                    399,00
                                 </p>
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col">
-                            <div class="forfait-lg" onclick="location.href = 'questionnaire.html'">
+                            <div class="forfait-lg" onclick="storeChosenOffer('epectase')">
                                 <p class="corner-text white-text">
                                     3H30
                                 </p>
                                 <h2 class="white-text align-center spec-font">
-                                    Mort Deluxe
+                                    Mourir en epectase
                                 </h2>
                                 <p class="show-on-hover white-text align-center">
-                                    Une fuckin description assez sweg
+                                    Entretien avec la psychologue et philosophe Hayley KAROWSKI Maquillage et coiffure par Ivan et Julia et Shooting photo avec
+                                    la présence de l’accessoiriste et spécialiste en posture Dimitri Henri Création d’un
+                                    album photo en Cadeau
                                 </p>
                                 <p class="show-on-hover price-tag white-text align-center">
-                                    Le prix
+                                    469,00
                                 </p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="skewed black-bg space-top footer-top">
+                <div class="reverse-skewed transparent-bg spacing-top-bot">
+                </div>
+            </div>
+            <div class="black-bg footer-filler">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-phone flex-center-center">
+                        <a class="white-text" href="projet.zip" download="">Télécharger projet</a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone flex-center-center">
+                        <a class="white-text" target="_blank" href="mentions.pdf">Mentions légales</a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--12-col-phone flex-center-center">
+                        <p class="white-text">Suivez-nous sur les reseaux :</p>
+                        <div>
+                            <a class="no-decoration" href="#">
+                                <img class="logo-sm" src="facebook.svg" alt="logo facebook">
+                            </a>
+                            <a class="no-decoration" href="#">
+                                <img class="logo-sm" src="instagram.svg" alt="logo instagram">
+                            </a>
+                            <a class="no-decoration" href="#">
+                                <img class="logo-sm" src="twitter.svg" alt="logo twitter">
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
-/******************/
+/***************************************************************************************/
 /* STYLE SPECIFIC */
-/******************/
+/***************************************************************************************/
 
 .white-text {
     color: white;
@@ -28,6 +28,10 @@ div .dark-bg {
 
 div .black-bg {
     background-color: #13140e;
+}
+
+.black-bg {
+    background-color: #13140e;    
 }
 
 div .transparent-bg {
@@ -78,6 +82,10 @@ div .space-left-desktop {
     text-align: center;
 }
 
+.full-width {
+    width: 100%;
+}
+
 .shadow {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);    
 }
@@ -88,6 +96,21 @@ div .space-left-desktop {
 
 .pos-abs {
     position: absolute;
+}
+
+.no-decoration:hover {
+    text-decoration: none
+}
+
+.line-control {
+    line-height: 30px
+}
+
+.logo-sm {
+    width: 50px;
+    max-width: 50px;
+    height: auto;
+    transition: box-shadow ease 0.5s;
 }
 
 p.quote.white-text {
@@ -134,11 +157,12 @@ p.quote.white-text {
     transition: height ease 0.5s, box-shadow ease 0.5s
 }
 .forfait-lg > p.align-center {
-    width: 100%;
+    width: 98%;
+    text-align: center;
 }
 
 .price-tag {
-    top: 12rem;
+    top: 14rem;
 }
 
 p.corner-text.white-text {
@@ -157,6 +181,13 @@ p.corner-text.white-text {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+.flex-center-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .spacing-top-bot {
@@ -202,16 +233,43 @@ div .spacing-top-bot-s {
     height: 5rem;
 }
 
+#send-btn {
+    width: 20%;
+}
+
+.animated {
+    transition: box-shadow ease 0.5s, border-color ease 0.5s;
+}
+
 #current-page {
     color: gold;
 }
 
-/**************/
+/***************************************************************************************/
 /* CUSTOM TAGS */
-/**************/
+/***************************************************************************************/
 
 i {
     color: white;
+}
+
+input {
+    border: 1px solid gray;
+    width: 100%;
+    height: 3rem;
+}
+
+textarea {
+    border: 1px solid gray;
+    width: 100%;
+    height: 7rem;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 div h1 {
@@ -225,15 +283,20 @@ p.white-text {
     font-size: 1.3rem;
 }
 
+.white-text {
+    font-family: 'Cantata One', serif;
+    font-size: 1.3rem;
+}
+
 h2.spec-font {
     font-family: 'Vidaloka', serif;
     font-size: 25px;
     text-transform: uppercase;
 }
 
-/**************/
+/***************************************************************************************/
 /* CUSTOM MDL */
-/**************/
+/***************************************************************************************/
 
 .mdl-layout__header {
     background-color: transparent;
@@ -256,16 +319,36 @@ div .mdl-layout__drawer-button {
     background-color: gold !important;
 }
 
-/**************/
+/***************************************************************************************/
+/* BOOK CSS */
+/***************************************************************************************/
+
+.text-field {
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    top: 7em;
+    margin-left: 2rem;
+    width: 90%;
+    height: 50%;
+}
+
+.book-btn-container {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/***************************************************************************************/
 /* MAIN AREAS */
-/**************/
+/***************************************************************************************/
 
 #global {
     position: relative;
-}
-
-#main-content {
-
 }
 
 #c-header {
@@ -280,9 +363,20 @@ div .mdl-layout__drawer-button {
     background-color: #13140e;
 }
 
-/**************/
+.footer-filler {
+    padding-bottom: 2.5rem;
+    position: absolute;
+    bottom: -3.5rem;
+    width: 100%;
+}
+
+.footer-top {
+    height: 11.5rem;
+}
+
+/***************************************************************************************/
 /* IMAGE DIVS */
-/**************/
+/***************************************************************************************/
 
 #accueil {
     background-image: url(accueil-bg.jpg);
@@ -305,6 +399,13 @@ div .mdl-layout__drawer-button {
     background-size: 100% 100%
 }
 
+#contact {
+    background-image: url(contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%
+}
+
 #logo-pyd {
     width: auto;
     max-height: 100px;
@@ -322,7 +423,8 @@ div .mdl-layout__drawer-button {
 #pyd-vid {
     width: 55%;
     height: auto;
-    border: 30px solid gold;
+    border: 40px solid transparent;
+    border-image: url(cadre.png) 18% round;
 }
 
 #logo-pyd-warning {
@@ -358,29 +460,49 @@ div .mdl-layout__drawer-button {
 }
 
 /**************/
-/* Animations */
+/* ANIMATIONS */
 /**************/
+
+.logo-sm:hover {
+    -webkit-box-shadow: 0px 0px 26px 3px gold;
+    -moz-box-shadow: 0px 0px 26px 3px gold;
+    box-shadow: 0px 0px 26px 3px gold;
+}
 
 .forfait-sm:hover {
     -webkit-box-shadow: 0px 0px 26px 3px white;
     -moz-box-shadow: 0px 0px 26px 3px white;
     box-shadow: 0px 0px 26px 3px white;
-    height: 15rem;
+    height: 16rem;
 }
 
 .forfait-lg:hover {
     -webkit-box-shadow: 0px 0px 26px 3px gold;
     -moz-box-shadow: 0px 0px 26px 3px gold;
     box-shadow: 0px 0px 26px 3px gold;
-    height: 15rem;
+    height: 16rem;
+}
+
+#forfait-mid:hover {
+    height: 19rem;
+}
+
+#forfait-right:hover {
+    height: 19rem;
 }
 
 .show-on-hover {
-    width: 100%;
+    width: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     position: absolute;
     visibility: hidden;
     opacity: 0;
     transition: opacity ease 0.2s, visibility ease 0.2s;
+}
+
+#price {
+    top: 17rem;
 }
 
 .animate-to-visible {
@@ -389,11 +511,19 @@ div .mdl-layout__drawer-button {
     transition: visibility 0.3s ease 0.5s, opacity 0.3s ease 0.5s;    
 }
 
+.animated:focus {
+    -webkit-box-shadow: 0px 0px 26px 3px white;
+    -moz-box-shadow: 0px 0px 26px 3px white;
+    box-shadow: 0px 0px 26px 3px white;
+    border-color: white;
+}
+
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
 
 @media (min-width: 200px) and (max-width: 839px) {
+    /* Small screens - Smartphones */
     #main-content {
         margin-top: 1rem;
     }
@@ -417,6 +547,11 @@ div .mdl-layout__drawer-button {
     #questionnaire {
         background-position: 81% center;
         background-size: auto 100%;
+    }
+
+    #contact {
+        background-position: 79% center;
+        background-size: auto 100%
     }
 
     #logo-pyd-sm {
@@ -451,9 +586,24 @@ div .mdl-layout__drawer-button {
     .align-right-desktop {
         text-align: initial;
     }
+
+    .footer-filler {
+        bottom: -96.5rem;
+    }
+
+    #send-btn {
+        width: 40%;
+    }
+
+    .text-field {
+        top: 10rem;
+        font-size: 1rem;
+    }
+
 }
 
 @media (min-width: 838px) and (max-width: 1024px) {
+    /* Medium Screens - Tablets */
     #main-content {
         margin-top: 3rem;
     }
@@ -471,6 +621,11 @@ div .mdl-layout__drawer-button {
     #questionnaire {
         background-position: 80% center;
         background-size: auto 100%;
+    }
+
+    #contact {
+        background-position: 80% center;
+        background-size: auto 100%
     }
 
     .forfait-sm {
@@ -498,6 +653,10 @@ div .mdl-layout__drawer-button {
     }
     .filler-collapse-inner {
         display: none;
+    }
+
+    .footer-filler {
+        bottom: -61.5rem;
     }
 
     #logo-pyd-md {

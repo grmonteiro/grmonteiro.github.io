@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
 
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">      
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+
     <!-- MDL -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">    
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
     <!-- Jquery -->
@@ -54,9 +54,9 @@
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="accueil.html">Accueil</a>
                     <a id="current-page" class="mdl-navigation__link" href="portrait.html">L'Ultime Portrait</a>
-                    <a class="mdl-navigation__link" href="#">Exibition</a>
+                    <a class="mdl-navigation__link" href="#">Exhibition</a>
                     <a class="mdl-navigation__link" href="#">Galerie d'Or</a>
-                    <a class="mdl-navigation__link" href="#">Contact</a>
+                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
                 </nav>
             </div>
         </header>
@@ -65,9 +65,9 @@
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="accueil.html">Accueil</a>
                 <a class="mdl-navigation__link" href="portrait.html">L'Ultime Portrait</a>
-                <a class="mdl-navigation__link" href="#">Exibition</a>
+                <a class="mdl-navigation__link" href="#">Exhibition</a>
                 <a class="mdl-navigation__link" href="#">Galerie d'Or</a>
-                <a class="mdl-navigation__link" href="#">Contact</a>
+                <a class="mdl-navigation__link" href="contact.html">Contact</a>
             </nav>
         </div>
 
@@ -88,10 +88,10 @@
                                 </div>
                             </div>
                             <div class="spacing-top-bot-s space-left-desktop mdl-grid">
-                                <div class="mdl-cell mdl-cell--4-col">
+                                <div class="mdl-cell mdl-cell--3-col">
                                     <p class="white-text huge-text fancy-text">10</p>
                                 </div>
-                                <div class="mdl-cell mdl-cell--8-col">
+                                <div class="mdl-cell mdl-cell--9-col">
                                     <p class="white-text larger-text fancy-text text-upper">Questions</p>
                                 </div>
                             </div>
@@ -117,52 +117,49 @@
                     <div id="canvas">
 
                         <div class="magazine-viewport">
-                            <form>
-                                <label hidden="hidden">Question 1</label>
-                                <textarea class="hide pos-abs" id="idQuestion1" name="question1"></textarea>
-
-                                <label hidden="hidden">Question 2</label>
-                                <textarea class="hide pos-abs" id="idQuestion2" name="question1"></textarea>
-
-                                <label hidden="hidden">Question 3</label>
-                                <textarea class="hide pos-abs" id="idQuestion3" name="question1"></textarea>
-
-                                <label hidden="hidden">Question 4</label>
-                                <textarea class="hide pos-abs" id="idQuestion4" name="question1"></textarea>
-
-                                <label hidden="hidden">Question 5</label>
-                                <textarea class="hide pos-abs" id="idQuestion5" name="question1"></textarea>
-
-                                <label hidden="hidden">Question 6</label>
-                                <textarea class="hide pos-abs" id="idQuestion6" name="question1"></textarea>
-                                
-                                <label hidden="hidden">Question 7</label>
-                                <textarea class="hide pos-abs" id="idQuestion7" name="question1"></textarea>
-
-                                <label hidden="hidden">Question 8</label>
-                                <textarea class="hide pos-abs" id="idQuestion8" name="question1"></textarea>
-
-                                <label hidden="hidden">Question 9</label>
-                                <textarea class="hide pos-abs" id="idQuestion9" name="question1"></textarea>
-
-                                <label hidden="hidden">Question 10</label>
-                                <textarea class="hide pos-abs" id="idQuestion10" name="question1"></textarea>
-                                
-                            </form>
                             <div class="container">
                                 <div class="magazine">
-                                    <!-- Next button -->
-                                    <div ignore="1" class="next-button"></div>
-                                    <!-- Previous button -->
-                                    <div ignore="1" class="previous-button"></div>
                                 </div>
                             </div>
+                            <div class="book-btn-container align-center">
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="sendMail()">Envoyer</button>
+                            </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
 
+            <!-- FOOTER -->
+            <div class="skewed black-bg space-top footer-top">
+                <div class="reverse-skewed transparent-bg spacing-top-bot">
+                </div>
+            </div>
+            <div class="black-bg footer-filler">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-phone flex-center-center">
+                        <a class="white-text" href="projet.zip" download="">Télécharger projet</a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone flex-center-center">
+                        <a class="white-text" target="_blank" href="mentions.pdf">Mentions légales</a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--12-col-phone flex-center-center">
+                        <p class="white-text">Suivez-nous sur les reseaux :</p>
+                        <div>
+                            <a class="no-decoration" href="#">
+                                <img class="logo-sm" src="facebook.svg" alt="logo facebook">
+                            </a>
+                            <a class="no-decoration" href="#">
+                                <img class="logo-sm" src="instagram.svg" alt="logo instagram">
+                            </a>
+                            <a class="no-decoration" href="#">
+                                <img class="logo-sm" src="twitter.svg" alt="logo twitter">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </main>
     </div>
