@@ -87,7 +87,8 @@ function sendMail() {
     var question10 = localStorage.getItem("question10");
 
     if ($.ajax({
-        url: "https://formspree.io/lea.caulet5912@gmail.fr",
+        url: "https://formspree.io/lea.caulet5912@gmail.com",
+        Allow: "GET, POST, HEAD",
         method: "POST",
         data: {
             message: "Nouveau Message à partir du site Pimp Your Death : \n \n" +

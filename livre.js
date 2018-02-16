@@ -71,10 +71,6 @@ function loadApp() {
 
                 disableControls(page);
 
-                console.log(">> loadApp() > flipbook.turn() > when: turning > page = " + page);
-                console.log(">> loadApp() > flipbook.turn() > when: turning > currentPage = " + currentPage);
-
-
                 $('.thumbnails .page-' + currentPage).
                     parent().
                     removeClass('current');
@@ -88,8 +84,6 @@ function loadApp() {
             turned: function (event, page, view) {
 
                 disableControls(page);
-
-                console.log(">> loadApp() > flipbook.turn() > when: turned > page = " + page);
 
                 $(this).turn('center');
 

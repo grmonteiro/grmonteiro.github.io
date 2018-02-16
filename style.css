@@ -98,6 +98,10 @@ div .space-left-desktop {
     position: absolute;
 }
 
+.pos-rel {
+    position: relative;
+}
+
 .no-decoration:hover {
     text-decoration: none
 }
@@ -337,7 +341,7 @@ div .mdl-layout__drawer-button {
 
 .book-btn-container {
     position: absolute;
-    bottom: 5rem;
+    bottom: 0rem;
     width: 100%;
     visibility: hidden;
     opacity: 0;
@@ -366,7 +370,7 @@ div .mdl-layout__drawer-button {
 .footer-filler {
     padding-bottom: 2.5rem;
     position: absolute;
-    bottom: -3.5rem;
+    bottom: -8.5rem;
     width: 100%;
 }
 
@@ -588,7 +592,7 @@ div .mdl-layout__drawer-button {
     }
 
     .footer-filler {
-        bottom: -96.5rem;
+        bottom: -7.5rem;
     }
 
     #send-btn {
@@ -656,7 +660,7 @@ div .mdl-layout__drawer-button {
     }
 
     .footer-filler {
-        bottom: -61.5rem;
+        bottom: -5.5rem;
     }
 
     #logo-pyd-md {
