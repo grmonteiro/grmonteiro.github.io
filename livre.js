@@ -1,7 +1,9 @@
 /*
 *   ** livre.js **
 *   Script qui controle le comportement du livre dans la page questionnaire.html
-*   
+*   Partie customisable du plugin turnjs
+*
+*   By http://www.turnjs.com/
 */
 
 
@@ -91,7 +93,6 @@ function loadApp() {
                 // ADDED CODE
                 var oddPage = parseInt(page) + 1;
                 oddPage = page == 1 ? 3 : parseInt(page) + 1;
-                console.log("oddPage = " + oddPage);
                 var question;
 
                 switch (oddPage) {
@@ -121,18 +122,15 @@ function loadApp() {
 
                 // Add textarea if it doesn't exist
                 if (!$(".p" + oddPage).children().hasClass("text-field") && question != undefined) {
-                    console.log('text-field doesnt exist yet');
                     $(".p" + oddPage).prepend(
                         "<label id='label-" + question + "' for='idQuestion" + question + "' hidden='hidden'>Question " + question + "</label>" +
                         "<textarea class='text-field show-field pos-abs' id='idQuestion" + question + "' name='question" + question + "' placeholder='Votre Réponse'></textarea>"
                     );
                     $("#idQuestion" + question).focus();
                 } else {
-                    console.log('text-field already exists');
                     $("#idQuestion" + question).focus();
                 }
                 if (oddPage == 23) {
-                    console.log('Book end');
                     $(".book-btn-container").addClass("animate-to-visible")
                 }
                 if (question > 1) {
@@ -140,9 +138,6 @@ function loadApp() {
                     localStorage.setItem("question" + (question - 1), answer);
                     localStorage.setItem("question" + question, $("#idQuestion" + question).val());                    
                 }
-
-
-                console.log('question = ' + question);
 
 
                 if (page == 1) {
